@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Boolean_Habit" representedClassName="Boolean_Habit" parentEntity="Habit" syncable="YES" codeGenerationType="class">
+        <attribute name="tasks" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="Habit" representedClassName="Habit" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="habit_type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String" defaultValueString="Default"/>
+    </entity>
+    <entity name="Increment_Habit" representedClassName="Increment_Habit" parentEntity="Habit" syncable="YES" codeGenerationType="class">
+        <attribute name="goal_value" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="unit_type" optional="YES" attributeType="String"/>
+        <relationship name="record" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Record" inverseName="increment_habit" inverseEntity="Record"/>
+    </entity>
+    <entity name="Record" representedClassName="Record" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="unit_amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="increment_habit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Increment_Habit" inverseName="record" inverseEntity="Increment_Habit"/>
+    </entity>
+</model>
