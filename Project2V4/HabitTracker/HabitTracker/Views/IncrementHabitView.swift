@@ -42,22 +42,17 @@ struct IncrementHabitView: View {
                 }
             }
             // TODO: Implement Records
-//            HStack {
-//                Spacer()
-//                Text("Unit Amount")
-//                Spacer()
-//                Text("Time Added")
-//                Spacer()
-//                Text("Note")
-//                Spacer()
-//            }
-//            .padding([.leading, .trailing], 10)
+            HStack {
+                Text("Unit Amount")
+                Spacer()
+                Text("Time Added")
+            }
+            .padding([.leading, .trailing], 10)
 //            List {
 //                ForEach(increment_habit.records_array) { record in
 //                    if Calendar.current.isDateInToday(record.unwrapped_date) {
 //                        Divider()
 //                        HStack {
-//                            Spacer()
 //                            let unit_amount_string = String(format: "%.2f", record.unit_amount)
 //                            Text(unit_amount_string + " \(increment_habit.unwrapped_unit_type)").contextMenu {
 //                                Button("Delete Record") {
@@ -67,13 +62,22 @@ struct IncrementHabitView: View {
 //                            }
 //                            Spacer()
 //                            Text(calc_time_since(date: record.unwrapped_date))
-//                            Spacer()
-//                            Text(record.note!).lineLimit(5).frame(width: 200)
-//                            Spacer()
+//
 //                        }
 //                    }
 //                }
 //            }
+            Table(increment_habit.records_array) {
+                TableColumn("Unit Amount", value: \.unit_amount) {
+                    Text(String(format: "%.2f", $0.unit_amount))
+                }
+                TableColumn("Time Since Added", value: \.unwrapped_date) {
+                    Text(calc_time_since(date: $0.unwrapped_date))
+                }
+                TableColumn("Note", value: \.note) {
+                    Text($0.note ?? "")
+                }
+            }
             Spacer()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)

@@ -20,7 +20,7 @@ extension Increment_Habit {
     @NSManaged public var goal_value: Double
     @NSManaged public var unit_type: String?
     @NSManaged public var record: NSSet?
-    
+       
     public var unwrapped_unit_type: String {
         unit_type ?? "Unknown Type"
     }
