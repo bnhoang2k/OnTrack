@@ -17,10 +17,19 @@
 		D3DD39122A0857D1008E7251 /* HabitViewSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39112A0857D1008E7251 /* HabitViewSwitcher.swift */; };
 		D3DD39142A0858C1008E7251 /* IncrementHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39132A0858C1008E7251 /* IncrementHabitView.swift */; };
 		D3DD391A2A0859BA008E7251 /* BooleanHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39192A0859BA008E7251 /* BooleanHabitView.swift */; };
-		D3DD391D2A085C4A008E7251 /* Boolean_Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD391B2A085C4A008E7251 /* Boolean_Habit+CoreDataClass.swift */; };
-		D3DD391E2A085C4A008E7251 /* Boolean_Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD391C2A085C4A008E7251 /* Boolean_Habit+CoreDataProperties.swift */; };
 		D3DD39242A08769A008E7251 /* EditIncrementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39232A08769A008E7251 /* EditIncrementView.swift */; };
 		D3DD39262A088703008E7251 /* AddRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39252A088703008E7251 /* AddRecordView.swift */; };
+		D3DD39282A08B36F008E7251 /* IncrementListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39272A08B36F008E7251 /* IncrementListView.swift */; };
+		D3DD392A2A08BA3F008E7251 /* IncrementGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39292A08BA3F008E7251 /* IncrementGraphView.swift */; };
+		D3DD392E2A08CB75008E7251 /* EditRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD392D2A08CB75008E7251 /* EditRecordView.swift */; };
+		D3DD395D2A08EA49008E7251 /* Boolean_Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39592A08EA49008E7251 /* Boolean_Habit+CoreDataClass.swift */; };
+		D3DD395E2A08EA49008E7251 /* Boolean_Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD395A2A08EA49008E7251 /* Boolean_Habit+CoreDataProperties.swift */; };
+		D3DD395F2A08EA49008E7251 /* Completion_Record+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD395B2A08EA49008E7251 /* Completion_Record+CoreDataClass.swift */; };
+		D3DD39602A08EA49008E7251 /* Completion_Record+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD395C2A08EA49008E7251 /* Completion_Record+CoreDataProperties.swift */; };
+		D3DD39622A090089008E7251 /* EditCRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39612A090089008E7251 /* EditCRView.swift */; };
+		D3DD39642A090201008E7251 /* BooleanListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39632A090201008E7251 /* BooleanListView.swift */; };
+		D3DD39662A090C32008E7251 /* IncrementPastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39652A090C32008E7251 /* IncrementPastView.swift */; };
+		D3DD39682A090CAE008E7251 /* EditBooleanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD39672A090CAE008E7251 /* EditBooleanView.swift */; };
 		D3FAC2532A033651009E66BA /* HabitListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FAC2522A033651009E66BA /* HabitListView.swift */; };
 		D3FAC2662A0343A3009E66BA /* Habit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FAC2642A0343A3009E66BA /* Habit+CoreDataClass.swift */; };
 		D3FAC2672A0343A3009E66BA /* Habit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FAC2652A0343A3009E66BA /* Habit+CoreDataProperties.swift */; };
@@ -46,10 +55,19 @@
 		D3DD39112A0857D1008E7251 /* HabitViewSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewSwitcher.swift; sourceTree = "<group>"; };
 		D3DD39132A0858C1008E7251 /* IncrementHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementHabitView.swift; sourceTree = "<group>"; };
 		D3DD39192A0859BA008E7251 /* BooleanHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanHabitView.swift; sourceTree = "<group>"; };
-		D3DD391B2A085C4A008E7251 /* Boolean_Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Boolean_Habit+CoreDataClass.swift"; path = "HabitTracker/Data Models/Boolean_Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D3DD391C2A085C4A008E7251 /* Boolean_Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Boolean_Habit+CoreDataProperties.swift"; path = "HabitTracker/Data Models/Boolean_Habit+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D3DD39232A08769A008E7251 /* EditIncrementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIncrementView.swift; sourceTree = "<group>"; };
 		D3DD39252A088703008E7251 /* AddRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRecordView.swift; sourceTree = "<group>"; };
+		D3DD39272A08B36F008E7251 /* IncrementListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementListView.swift; sourceTree = "<group>"; };
+		D3DD39292A08BA3F008E7251 /* IncrementGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementGraphView.swift; sourceTree = "<group>"; };
+		D3DD392D2A08CB75008E7251 /* EditRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecordView.swift; sourceTree = "<group>"; };
+		D3DD39592A08EA49008E7251 /* Boolean_Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Boolean_Habit+CoreDataClass.swift"; path = "HabitTracker/Data Models/Boolean_Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D3DD395A2A08EA49008E7251 /* Boolean_Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Boolean_Habit+CoreDataProperties.swift"; path = "HabitTracker/Data Models/Boolean_Habit+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D3DD395B2A08EA49008E7251 /* Completion_Record+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Completion_Record+CoreDataClass.swift"; path = "HabitTracker/Data Models/Completion_Record+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D3DD395C2A08EA49008E7251 /* Completion_Record+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Completion_Record+CoreDataProperties.swift"; path = "HabitTracker/Data Models/Completion_Record+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D3DD39612A090089008E7251 /* EditCRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCRView.swift; sourceTree = "<group>"; };
+		D3DD39632A090201008E7251 /* BooleanListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanListView.swift; sourceTree = "<group>"; };
+		D3DD39652A090C32008E7251 /* IncrementPastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementPastView.swift; sourceTree = "<group>"; };
+		D3DD39672A090CAE008E7251 /* EditBooleanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBooleanView.swift; sourceTree = "<group>"; };
 		D3FAC2522A033651009E66BA /* HabitListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitListView.swift; sourceTree = "<group>"; };
 		D3FAC2642A0343A3009E66BA /* Habit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Habit+CoreDataClass.swift"; path = "HabitTracker/Data Models/Habit+CoreDataClass.swift"; sourceTree = "<group>"; };
 		D3FAC2652A0343A3009E66BA /* Habit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Habit+CoreDataProperties.swift"; path = "HabitTracker/Data Models/Habit+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -76,8 +94,10 @@
 		D31D34F82A0067AE00239FC8 = {
 			isa = PBXGroup;
 			children = (
-				D3DD391B2A085C4A008E7251 /* Boolean_Habit+CoreDataClass.swift */,
-				D3DD391C2A085C4A008E7251 /* Boolean_Habit+CoreDataProperties.swift */,
+				D3DD39592A08EA49008E7251 /* Boolean_Habit+CoreDataClass.swift */,
+				D3DD395A2A08EA49008E7251 /* Boolean_Habit+CoreDataProperties.swift */,
+				D3DD395B2A08EA49008E7251 /* Completion_Record+CoreDataClass.swift */,
+				D3DD395C2A08EA49008E7251 /* Completion_Record+CoreDataProperties.swift */,
 				D3FAC26E2A034B93009E66BA /* Record+CoreDataClass.swift */,
 				D3FAC26F2A034B93009E66BA /* Record+CoreDataProperties.swift */,
 				D3FAC26A2A034B6A009E66BA /* Increment_Habit+CoreDataClass.swift */,
@@ -132,14 +152,10 @@
 		D31D35192A0067DD00239FC8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D3FAC2722A0354F7009E66BA /* ContentView.swift */,
-				D3FAC2522A033651009E66BA /* HabitListView.swift */,
-				D3FAC2682A0348A0009E66BA /* AddHabitView.swift */,
-				D3DD39112A0857D1008E7251 /* HabitViewSwitcher.swift */,
-				D3DD39132A0858C1008E7251 /* IncrementHabitView.swift */,
-				D3DD39232A08769A008E7251 /* EditIncrementView.swift */,
-				D3DD39252A088703008E7251 /* AddRecordView.swift */,
-				D3DD39192A0859BA008E7251 /* BooleanHabitView.swift */,
+				D3DD39692A090EC3008E7251 /* Top Level */,
+				D3DD396A2A090EEB008E7251 /* Inc */,
+				D3DD396B2A090F0D008E7251 /* Bool */,
+				D3DD396C2A090F28008E7251 /* Sub Group Manip */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -151,6 +167,49 @@
 				D31D351D2A00691400239FC8 /* habit_type.swift */,
 			);
 			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		D3DD39692A090EC3008E7251 /* Top Level */ = {
+			isa = PBXGroup;
+			children = (
+				D3FAC2722A0354F7009E66BA /* ContentView.swift */,
+				D3FAC2682A0348A0009E66BA /* AddHabitView.swift */,
+				D3FAC2522A033651009E66BA /* HabitListView.swift */,
+				D3DD39112A0857D1008E7251 /* HabitViewSwitcher.swift */,
+			);
+			path = "Top Level";
+			sourceTree = "<group>";
+		};
+		D3DD396A2A090EEB008E7251 /* Inc */ = {
+			isa = PBXGroup;
+			children = (
+				D3DD39132A0858C1008E7251 /* IncrementHabitView.swift */,
+				D3DD39272A08B36F008E7251 /* IncrementListView.swift */,
+				D3DD39292A08BA3F008E7251 /* IncrementGraphView.swift */,
+				D3DD39652A090C32008E7251 /* IncrementPastView.swift */,
+				D3DD39232A08769A008E7251 /* EditIncrementView.swift */,
+			);
+			path = Inc;
+			sourceTree = "<group>";
+		};
+		D3DD396B2A090F0D008E7251 /* Bool */ = {
+			isa = PBXGroup;
+			children = (
+				D3DD39192A0859BA008E7251 /* BooleanHabitView.swift */,
+				D3DD39632A090201008E7251 /* BooleanListView.swift */,
+				D3DD39672A090CAE008E7251 /* EditBooleanView.swift */,
+			);
+			path = Bool;
+			sourceTree = "<group>";
+		};
+		D3DD396C2A090F28008E7251 /* Sub Group Manip */ = {
+			isa = PBXGroup;
+			children = (
+				D3DD39252A088703008E7251 /* AddRecordView.swift */,
+				D3DD392D2A08CB75008E7251 /* EditRecordView.swift */,
+				D3DD39612A090089008E7251 /* EditCRView.swift */,
+			);
+			path = "Sub Group Manip";
 			sourceTree = "<group>";
 		};
 		D3FAC23F2A0322EF009E66BA /* Misc */ = {
@@ -231,26 +290,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3DD39282A08B36F008E7251 /* IncrementListView.swift in Sources */,
+				D3DD39602A08EA49008E7251 /* Completion_Record+CoreDataProperties.swift in Sources */,
 				D3FAC27B2A03ACAD009E66BA /* TimeFormatter.swift in Sources */,
 				D3FAC2662A0343A3009E66BA /* Habit+CoreDataClass.swift in Sources */,
 				D3FAC2532A033651009E66BA /* HabitListView.swift in Sources */,
 				D3FAC2732A0354F7009E66BA /* ContentView.swift in Sources */,
 				D31D35112A0067AF00239FC8 /* HabitTracker.xcdatamodeld in Sources */,
-				D3DD391D2A085C4A008E7251 /* Boolean_Habit+CoreDataClass.swift in Sources */,
 				D3FAC2702A034B93009E66BA /* Record+CoreDataClass.swift in Sources */,
 				D31D35202A00698800239FC8 /* DataController.swift in Sources */,
 				D3DD39142A0858C1008E7251 /* IncrementHabitView.swift in Sources */,
-				D3DD391E2A085C4A008E7251 /* Boolean_Habit+CoreDataProperties.swift in Sources */,
+				D3DD392E2A08CB75008E7251 /* EditRecordView.swift in Sources */,
 				D3DD391A2A0859BA008E7251 /* BooleanHabitView.swift in Sources */,
 				D3DD39242A08769A008E7251 /* EditIncrementView.swift in Sources */,
+				D3DD392A2A08BA3F008E7251 /* IncrementGraphView.swift in Sources */,
+				D3DD39662A090C32008E7251 /* IncrementPastView.swift in Sources */,
+				D3DD395D2A08EA49008E7251 /* Boolean_Habit+CoreDataClass.swift in Sources */,
 				D31D35222A006E7900239FC8 /* HabitViewModel.swift in Sources */,
 				D3FAC2712A034B93009E66BA /* Record+CoreDataProperties.swift in Sources */,
 				D3FAC26C2A034B6A009E66BA /* Increment_Habit+CoreDataClass.swift in Sources */,
 				D3FAC26D2A034B6A009E66BA /* Increment_Habit+CoreDataProperties.swift in Sources */,
+				D3DD39642A090201008E7251 /* BooleanListView.swift in Sources */,
+				D3DD39682A090CAE008E7251 /* EditBooleanView.swift in Sources */,
+				D3DD395F2A08EA49008E7251 /* Completion_Record+CoreDataClass.swift in Sources */,
 				D31D35052A0067AE00239FC8 /* HabitTrackerApp.swift in Sources */,
 				D3FAC2672A0343A3009E66BA /* Habit+CoreDataProperties.swift in Sources */,
 				D31D351E2A00691400239FC8 /* habit_type.swift in Sources */,
 				D3DD39262A088703008E7251 /* AddRecordView.swift in Sources */,
+				D3DD395E2A08EA49008E7251 /* Boolean_Habit+CoreDataProperties.swift in Sources */,
+				D3DD39622A090089008E7251 /* EditCRView.swift in Sources */,
 				D3FAC2692A0348A0009E66BA /* AddHabitView.swift in Sources */,
 				D3DD39122A0857D1008E7251 /* HabitViewSwitcher.swift in Sources */,
 			);

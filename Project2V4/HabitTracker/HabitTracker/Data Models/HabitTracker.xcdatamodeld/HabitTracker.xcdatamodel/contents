@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Boolean_Habit" representedClassName=".Boolean_Habit" parentEntity="Habit" syncable="YES">
-        <attribute name="is_completed" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
         <attribute name="note" optional="YES" attributeType="String" defaultValueString=""/>
-        <relationship name="sub_habits" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Boolean_Habit" inverseName="sub_habits" inverseEntity="Boolean_Habit"/>
+        <relationship name="completion_records" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Completion_Record" inverseName="boolean_habit" inverseEntity="Completion_Record"/>
+    </entity>
+    <entity name="Completion_Record" representedClassName=".Completion_Record" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="is_completed" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="boolean_habit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Boolean_Habit" inverseName="completion_records" inverseEntity="Boolean_Habit"/>
     </entity>
     <entity name="Habit" representedClassName="Habit" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" defaultDateTimeInterval="704670180" usesScalarValueType="NO"/>

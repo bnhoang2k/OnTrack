@@ -16,6 +16,7 @@ struct AddRecordView: View {
     
     @State private var unit_amount: Double = 0.0
     @State private var note: String = ""
+    @State private var curr_time: Date = Date()
     
     @State private var show_error_view: Bool = false
     
@@ -28,6 +29,7 @@ struct AddRecordView: View {
                 TextField("", value: $unit_amount, formatter: NumberFormatter()).frame(width: 150).multilineTextAlignment(.center).textFieldStyle(.roundedBorder)
             }
             .padding(.bottom , 5)
+            DatePicker("Select a time", selection: $curr_time, displayedComponents: [.hourAndMinute, .date]).frame(width: 300).multilineTextAlignment(.center).padding(.bottom, 5)
             ZStack {
                 TextField("", text: $note, axis: .vertical).lineLimit(3...5)
                 if note.isEmpty {
@@ -41,7 +43,7 @@ struct AddRecordView: View {
                         show_error_view.toggle()
                     }
                     else {
-                        DataController().add_record(increment_habit: increment_habit, unit_amount: unit_amount, note: note, context: moc)
+                        DataController().add_record(increment_habit: increment_habit, unit_amount: unit_amount, curr_time: curr_time, note: note, context: moc)
                         dismiss()
                     }
                 }

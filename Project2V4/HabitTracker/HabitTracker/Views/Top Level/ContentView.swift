@@ -23,8 +23,9 @@ struct ContentView: View {
                     .navigationSplitViewColumnWidth(200)
             }detail: {
                 if selected_habit != nil {
-                    HabitViewSwitcher(curr_habit: $selected_habit, show_edit_habit: $habit_view_model.show_edit_habit)
+                    HabitViewSwitcher(curr_habit: $selected_habit, show_edit_habit: $habit_view_model.show_edit_habit, show_edit_record: $habit_view_model.show_edit_record)
                 }
+
                 else {
                     Text("Select a habit!")
                 }

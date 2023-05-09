@@ -57,7 +57,6 @@ extension DataController {
         
         // Basically habit description
         new_habit.note = note
-        new_habit.is_completed = false
         
         save(context: context)
     }
@@ -65,13 +64,6 @@ extension DataController {
 
 extension DataController {
     // More functionality
-    
-    // Toggle Is_Completed
-    func iscompleted_toggle(boolean_habit: Boolean_Habit, context: NSManagedObjectContext) {
-        boolean_habit.is_completed.toggle()
-        
-        save(context: context)
-    }
     
     // Edit Increment Habit
     func edit_habit(increment_habit: Increment_Habit, new_name: String, new_goal_value: Double, new_unit_type: String, context: NSManagedObjectContext) {
@@ -81,18 +73,52 @@ extension DataController {
         
         save(context: context)
     }
+    func edit_habit(boolean_habit: Boolean_Habit, new_name: String, new_note: String, context: NSManagedObjectContext) {
+        boolean_habit.name = new_name
+        boolean_habit.note = new_note
+        save(context: context)
+    }
     
-    // TODO: Edit Boolean
-    
-    func add_record(increment_habit: Increment_Habit, unit_amount: Double, note: String, context: NSManagedObjectContext) {
+    func add_record(increment_habit: Increment_Habit, unit_amount: Double, curr_time: Date, note: String, context: NSManagedObjectContext) {
         let new_record = Record(context: context)
-        new_record.date = Date()
+        new_record.date = curr_time
         new_record.id = UUID()
         new_record.unit_amount = unit_amount
         new_record.note = note
         
         increment_habit.addToRecord(new_record)
         
+        save(context: context)
+    }
+    
+    func edit_record(record: Record, unit_amount: Double, date: Date, note: String, context: NSManagedObjectContext) {
+        record.unit_amount = unit_amount
+        record.date = date
+        record.note = note
+        save(context: context)
+    }
+    
+    func add_record(boolean_habit: Boolean_Habit, context: NSManagedObjectContext) {
+        let new_cr = Completion_Record(context: context)
+        new_cr.date = Date()
+        new_cr.id = UUID()
+        new_cr.is_completed = false
+        
+        boolean_habit.addToCompletion_records(new_cr)
+        save(context: context)
+    }
+    
+    // Toggle Is_Completed
+    func iscompleted_toggle(cr: Completion_Record, is_complete: Bool, context: NSManagedObjectContext) {
+        
+        cr.is_completed = is_complete
+        
+        save(context: context)
+    }
+    
+    func edit_cr(cr: Completion_Record, date: Date, is_completed: Bool, context: NSManagedObjectContext) {
+        cr.date = date
+        cr.is_completed = is_completed
         save(context: context)
     }
 }

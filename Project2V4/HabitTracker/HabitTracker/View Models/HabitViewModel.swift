@@ -14,6 +14,7 @@ class HabitViewModel : ObservableObject {
     @Published var show_edit_habit = false
     @Published var show_edit_view = false
     @Published var show_add_habit_error = false
+    @Published var show_edit_record = false
     
     @Published var selected_habit_name: String = ""
     

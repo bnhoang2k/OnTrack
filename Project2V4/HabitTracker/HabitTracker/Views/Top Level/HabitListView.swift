@@ -35,12 +35,6 @@ struct HabitListView: View {
                         .contextMenu {
                             Button("Delete Habit") {
                                 self.delete_habit(habit: curr_habit)
-                            }
-                        }
-                    if curr_habit is Boolean_Habit {
-                        Spacer()
-                        Toggle("", isOn: $is_completed).onChange(of: is_completed) { _ in
-                            DataController().iscompleted_toggle(boolean_habit: curr_habit as! Boolean_Habit, context: moc)
                         }
                     }
                 }
@@ -55,9 +49,5 @@ extension HabitListView {
     private func delete_habit (habit: Habit) {
         moc.delete(habit)
         DataController().save(context: moc)
-    }
-    
-    private func move_item(source: IndexSet, destination: Int) {
-        
     }
 }

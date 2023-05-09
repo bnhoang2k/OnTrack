@@ -59,6 +59,11 @@ struct EditHabitView: View {
             }
             
         }
+        .onAppear() {
+            habit_name = increment_habit.unwrapped_name
+            habit_goal_value = increment_habit.goal_value
+            habit_unit_type = increment_habit.unwrapped_unit_type
+        }
         .alert("Invalid Name, Unit Type, or Goal Value", isPresented: $edit_view_error) {
             Text("Error")
         }
